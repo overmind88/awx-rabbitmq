@@ -1,5 +1,5 @@
 ARG RABBITMQ_VERSION
-FROM rabbitmq:${RABBITMQ_VERSION}-management-alpine
+FROM arm32v7/rabbitmq:${RABBITMQ_VERSION}-management
 
 ENV RABBITMQ_ERLANG_COOKIE="cookiemonster"
 
